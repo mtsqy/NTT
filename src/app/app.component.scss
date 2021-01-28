@@ -1,0 +1,79 @@
+.container {
+    padding: 1.2vw 7vw;
+}
+
+h1 {
+    font-size: 4vw;
+    margin: 7vw auto;
+    width: 100%;
+    text-align: center;
+    font-weight: 300;
+}
+
+h2 {
+    font-size: 1.6vw;
+    margin: 2.8vw 0;
+    font-weight: 600;
+}
+
+.input {
+    &__group {
+        display: flex;
+        flex-direction: column;
+        margin: 3vw;
+        max-width: 30vw;
+        &--row {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+            align-items: center;
+        }
+        label {
+            font-weight: 400;
+            margin: 0;
+        }
+        input {
+            padding: 1.2vw;
+            border: none;
+            border-bottom: .2vw solid #1b1b1e;
+            margin: 1vw 0;
+            margin-bottom: 2vw;
+            max-width: 30vw;
+            background-color: transparent;
+            font-size: 1.33vw;
+            &:focus {
+                border-bottom: .17vw solid rgba(27, 27, 30, .35);
+            }
+        }
+        button {
+            padding: 1.1vw 1.8vw;
+            max-width: 10vw;
+            border: .12vw solid transparent;
+            border-radius: 12vw;
+            background-color: #1b1b1e;
+            font-size: 1.15vw;
+            letter-spacing: .08vw;
+            color: #ffffff;
+            cursor: pointer;
+            &:hover {
+                background-color: transparent;
+                color: #1b1b1e;
+                border: .12vw solid #1b1b1e;
+            }
+            
+        }
+        span {
+            max-width: 45%;
+            overflow-x: visible;
+            font-size: 1.33vw;
+        }
+        .example {
+            min-width: 100%;
+            font-size: 1.25vw;
+            font-style: italic;
+            margin-bottom: 2vw;
+            font-weight: 500;
+            font-size: 1.33vw;
+        }
+    }
+}
